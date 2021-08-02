@@ -1,7 +1,7 @@
 {
-  "name": "context-template",
+  "name": "vdl-context",
   "version": "0.0.1",
-  "description": "Context template repository.",
+  "description": "Verifiable Driver's License Context.",
   "main": "js/index.js",
   "module": "./dist/context.esm.js",
   "files": [
