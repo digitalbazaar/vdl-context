@@ -8,6 +8,10 @@ module.exports = {
     '@protected': true,
     id: '@id',
     type: '@type',
+    license: {
+      '@id': 'https://w3id.org/vdl#license',
+      '@type': '@id'
+    },
     Iso18013DriversLicense: {
       '@id': 'https://w3id.org/vdl#Iso18013DriversLicense',
       '@context': {

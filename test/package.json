@@ -1,0 +1,10 @@
+{
+  "name": "vdl-context-tests",
+  "version": "0.0.1",
+  "description": "Tests for the vdl context",
+  "dependencies": {
+    "@digitalbazaar/did-method-key": "^2.0.0",
+    "@digitalbazaar/vc": "^1.0.0",
+    "jsonld-document-loader": "^1.2.0"
+  }
+}

@@ -57,6 +57,6 @@
     "serialize": "node bin/serialize.js",
     "test": "npm run lint && npm run build && npm run test-node && npm run test-karma",
     "test-karma": "karma start test/karma.conf.js",
-    "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks test/*.spec.js"
+    "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks test/mocha/*.spec.js"
   }
 }
