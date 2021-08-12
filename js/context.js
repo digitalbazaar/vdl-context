@@ -12,7 +12,8 @@ module.exports = {
       '@id': 'https://w3id.org/vdl#license',
       '@type': '@id'
     },
-    Iso18013DriversLicenseCredential: 'https://w3id.org/vdl#Iso18013DriversLicenseCredential',
+    Iso18013DriversLicenseCredential:
+      'https://w3id.org/vdl#Iso18013DriversLicenseCredential',
     Iso18013DriversLicense: {
       '@id': 'https://w3id.org/vdl#Iso18013DriversLicense',
       '@context': {
