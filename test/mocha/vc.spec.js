@@ -20,10 +20,11 @@ describe('Sign with Context', () => {
       ],
       type: [
         'VerifiableCredential',
-        'Iso18013DriversLicense'
+        'Iso18013DriversLicenseCredential'
       ],
       credentialSubject: {
         id: 'did:key:z6MkrniA4wQR3eoWvpaTbCpdyjoowsRQYeXx2e3vLUp4jk4e',
+        type: 'Iso18013DriversLicenseHolder',
         license: {
           type: 'Iso18013DriversLicense',
           document_number: '542426814',
