@@ -36,6 +36,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install
       run: npm install
+    - name: Install Test deps
+      run: cd test && npm install
     - name: Run karma tests
       env:
         BUNDLER: ${{ matrix.bundler }}
