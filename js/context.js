@@ -48,7 +48,8 @@ module.exports = {
           '@id': 'https://w3id.org/vdl#administrative_number'
         },
         driving_privileges: {
-          '@id': 'https://w3id.org/vdl#driving_privileges'
+          '@id': 'https://w3id.org/vdl#driving_privileges',
+          '@type': '@json'
         },
         un_distinguishing_sign: {
           '@id': 'https://w3id.org/vdl#un_distinguishing_sign'

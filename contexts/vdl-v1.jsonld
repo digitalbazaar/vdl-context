@@ -13,10 +13,6 @@
         "@protected": true,
         "id": "@id",
         "type": "@type",
-        "license": {
-          "@id": "https://w3id.org/vdl#license",
-          "@type": "@id"
-        },
         "family_name": {
           "@id": "https://w3id.org/vdl#family_name"
         },
@@ -47,7 +43,8 @@
           "@id": "https://w3id.org/vdl#administrative_number"
         },
         "driving_privileges": {
-          "@id": "https://w3id.org/vdl#driving_privileges"
+          "@id": "https://w3id.org/vdl#driving_privileges",
+          "@type": "@json"
         },
         "un_distinguishing_sign": {
           "@id": "https://w3id.org/vdl#un_distinguishing_sign"
