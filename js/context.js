@@ -18,10 +18,6 @@ module.exports = {
         '@protected': true,
         id: '@id',
         type: '@type',
-        license: {
-          '@id': 'https://w3id.org/vdl#license',
-          '@type': '@id'
-        },
         family_name: {
           '@id': 'https://w3id.org/vdl#family_name'
         },
