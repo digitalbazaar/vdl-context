@@ -8,7 +8,7 @@ const documentLoader = require('../loader');
 const {Ed25519Signature2020} = require('@digitalbazaar/ed25519-signature-2020');
 
 const {purposes: {AssertionProofPurpose}} = jsigs;
-chai.should();
+const should = chai.should();
 
 describe('Sign with Context', () => {
 
@@ -35,7 +35,19 @@ describe('Sign with Context', () => {
           expiry_date: '2022-08-27T12:00:00Z',
           issuing_country: 'US',
           issuing_authority: 'AL',
-          un_distinguishing_sign: 'USA'
+          un_distinguishing_sign: 'USA',
+          driving_privileges: [{
+            codes: [{code: 'D'}],
+            vehicle_category_code: 'D',
+            issue_date: '2019-01-01',
+            expiry_date: '2027-01-01'
+          },
+          {
+            codes: [{code: 'C'}],
+            vehicle_category_code: 'C',
+            issue_date: '2019-01-01',
+            expiry_date: '2017-01-01'
+          }]
         }
       }
     };
@@ -43,11 +55,13 @@ describe('Sign with Context', () => {
     const keyPair = methodFor({purpose: 'verificationMethod'});
     const suite = new Ed25519Signature2020({key: keyPair});
     const purpose = new AssertionProofPurpose();
-    const result = await jsigs.sign(credential, {
+    const signedVC = await jsigs.sign(credential, {
       purpose,
       documentLoader,
       suite
     });
-    console.log(result);
+    should.exist(signedVC);
+    signedVC.should.be.an('object');
+    signedVC.should.have.property('proof');
   });
 });
