@@ -26,6 +26,7 @@ describe('Sign with Context', () => {
         id: 'did:key:z6MkrniA4wQR3eoWvpaTbCpdyjoowsRQYeXx2e3vLUp4jk4e',
         type: 'Iso18013DriversLicense',
         license: {
+          type: 'Iso18013DriversLicense',
           document_number: '542426814',
           family_name: 'TURNER',
           given_name: 'SUSAN',
