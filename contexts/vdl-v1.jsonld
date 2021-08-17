@@ -21,7 +21,8 @@
           "@id": "https://w3id.org/vdl#given_name"
         },
         "birth_date": {
-          "@id": "https://w3id.org/vdl#birth_date"
+          "@id": "https://w3id.org/vdl#birth_date",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
         "issue_date": {
           "@id": "https://w3id.org/vdl#issue_date",
@@ -72,10 +73,12 @@
           "@id": "https://w3id.org/vdl#resident_address"
         },
         "portrait": {
-          "@id": "https://w3id.org/vdl#portrait"
+          "@id": "https://w3id.org/vdl#portrait",
+          "@type": "http://schema.org/image"
         },
         "portrait_capture_date": {
-          "@id": "https://w3id.org/vdl#portrait_capture_date"
+          "@id": "https://w3id.org/vdl#portrait_capture_date",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
         "age_in_years": {
           "@id": "https://w3id.org/vdl#age_in_years"
