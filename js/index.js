@@ -1,22 +1,22 @@
 /*!
- * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2021-2023 Digital Bazaar, Inc. All rights reserved.
  */
 'use strict';
 
-const context = require('./context');
+const CONTEXT = require('./context');
 const constants = require('./constants');
 const {CONTEXT_URL, CBORLD_VALUE} = constants;
 
 const contexts = new Map();
-contexts.set(CONTEXT_URL, context);
+contexts.set(CONTEXT_URL, CONTEXT);
 
 const appContextMap = new Map();
 appContextMap.set(CONTEXT_URL, CBORLD_VALUE);
 
 module.exports = {
+  CONTEXT,
+  CONTEXT_URL,
   constants,
   contexts,
-  appContextMap,
-  CONTEXT_URL,
-  CONTEXT: context
+  appContextMap
 };
