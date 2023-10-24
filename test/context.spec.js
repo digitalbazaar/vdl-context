@@ -1,5 +1,5 @@
 /*!
- * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2021-2023 Digital Bazaar, Inc. All rights reserved.
  */
 const chai = require('chai');
 chai.should();
@@ -7,7 +7,7 @@ const {expect} = chai;
 
 const {
   contexts, constants, appContextMap, CONTEXT_URL, CONTEXT
-} = require('../..');
+} = require('..');
 
 const contextUrl = constants.CONTEXT_URL;
 
