@@ -1,5 +1,5 @@
 {
-  "name": "vdl-context",
+  "name": "@digitalbazaar/vdl-context",
   "version": "0.0.1",
   "description": "Verifiable Driver's License Context.",
   "main": "js/index.js",
@@ -11,17 +11,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalbazaar/context-template"
+    "url": "https://github.com/digitalbazaar/vdl-context"
   },
   "bugs": {
-    "url": "https://github.com/digitalbazaar/context-template/issues"
+    "url": "https://github.com/digitalbazaar/vdl-context/issues"
   },
   "author": {
     "name": "Digital Bazaar, Inc.",
     "email": "support@digitalbazaar.com",
     "url": "https://digitalbazaar.com/"
   },
-  "homepage": "https://github.com/digitalbazaar/context-template#readme",
+  "homepage": "https://github.com/digitalbazaar/vdl-context#readme",
   "license": "BSD-3-Clause",
   "devDependencies": {
     "chai": "^4.2.0",
