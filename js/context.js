@@ -8,12 +8,29 @@ module.exports = {
     '@protected': true,
     id: '@id',
     type: '@type',
-    driversLicense: {
-      '@id': 'https://w3id.org/vdl#license',
+    name: 'https://schema.org/name',
+    description: 'https://schema.org/description',
+    image: {
+      '@id': 'https://schema.org/image',
+      '@type': '@id'
+    },
+    url: {
+      '@id': 'https://schema.org/url',
       '@type': '@id'
     },
     Iso18013DriversLicenseCredential:
       'https://w3id.org/vdl#Iso18013DriversLicenseCredential',
+    LicensedDriver: {
+      '@id': 'https://w3id.org/vdl#LicensedDriver',
+      '@type': '@id',
+      '@context': {
+        '@protected': true,
+        driversLicense: {
+          '@id': 'https://w3id.org/vdl#license',
+          '@type': '@id'
+        }
+      }
+    },
     Iso18013DriversLicense: {
       '@id': 'https://w3id.org/vdl#Iso18013DriversLicense',
       '@context': {
@@ -34,7 +51,7 @@ module.exports = {
         age_over_65: 'https://w3id.org/vdl#ageOver65',
         birth_date: {
           '@id': 'https://w3id.org/vdl#birthDate',
-          '@type': 'https://www.rfc-editor.org/rfc/rfc3339#full-date'
+          '@type': 'http://www.w3.org/2001/XMLSchema#dateTime'
         },
         birth_place: 'https://w3id.org/vdl#birthPlace',
         document_number: 'https://w3id.org/vdl#documentNumber',
@@ -44,15 +61,13 @@ module.exports = {
         },
         expiry_date: {
           '@id': 'https://w3id.org/vdl#expiryDate',
-          '@type': 'https://w3id.org/vdl#date-time-or-full-date'
+          '@type': 'http://www.w3.org/2001/XMLSchema#dateTime'
         },
         eye_colour: 'https://w3id.org/vdl#eyeColour',
         family_name: 'https://w3id.org/vdl#familyName',
-        family_name_national_character:
-          'https://w3id.org/vdl#familyNameNationalCharacter',
+        family_name_national_character: 'https://w3id.org/vdl#familyNameNationalCharacter',
         given_name: 'https://w3id.org/vdl#givenName',
-        given_name_national_character:
-          'https://w3id.org/vdl#givenNameNationalCharacter',
+        given_name_national_character: 'https://w3id.org/vdl#givenNameNationalCharacter',
         hair_colour: 'https://w3id.org/vdl#hairColour',
         height: {
           '@id': 'https://w3id.org/vdl#height',
@@ -60,7 +75,7 @@ module.exports = {
         },
         issue_date: {
           '@id': 'https://w3id.org/vdl#issueDate',
-          '@type': 'https://w3id.org/vdl#date-time-or-full-date'
+          '@type': 'http://www.w3.org/2001/XMLSchema#dateTime'
         },
         issuing_authority: 'https://w3id.org/vdl#issuingAuthority',
         issuing_country: 'https://w3id.org/vdl#issuingCountry',
@@ -68,11 +83,11 @@ module.exports = {
         nationality: 'https://w3id.org/vdl#nationality',
         portrait: {
           '@id': 'https://w3id.org/vdl#portrait',
-          '@type': 'http://www.w3.org/2001/XMLSchema#base64Binary'
+          '@type': '@id'
         },
         portrait_capture_date: {
           '@id': 'https://w3id.org/vdl#portraitCaptureDate',
-          '@type': 'https://www.rfc-editor.org/rfc/rfc3339#date-time'
+          '@type': 'http://www.w3.org/2001/XMLSchema#dateTime'
         },
         resident_address: 'https://w3id.org/vdl#residentAddress',
         resident_city: 'https://w3id.org/vdl#residentCity',
@@ -85,7 +100,7 @@ module.exports = {
         },
         signature_usual_mark: {
           '@id': 'https://w3id.org/vdl#signatureUsualMark',
-          '@type': 'http://www.w3.org/2001/XMLSchema#base64Binary'
+          '@type': '@id'
         },
         un_distinguishing_sign: 'https://w3id.org/vdl#unDistinguishingSign',
         weight: {
