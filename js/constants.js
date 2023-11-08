@@ -8,5 +8,5 @@ module.exports = {
   CONTEXT_URL: 'https://w3id.org/vdl/v1',
   // value between 0x0 and 0x7FFF for globally registered term codec values
   // or >= 0x8000 for app-specific local terms
-  CBORLD_VALUE: 0x20
+  CBORLD_VALUE: 0x00
 };
