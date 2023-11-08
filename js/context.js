@@ -65,9 +65,11 @@ module.exports = {
         },
         eye_colour: 'https://w3id.org/vdl#eyeColour',
         family_name: 'https://w3id.org/vdl#familyName',
-        family_name_national_character: 'https://w3id.org/vdl#familyNameNationalCharacter',
+        family_name_national_character:
+          'https://w3id.org/vdl#familyNameNationalCharacter',
         given_name: 'https://w3id.org/vdl#givenName',
-        given_name_national_character: 'https://w3id.org/vdl#givenNameNationalCharacter',
+        given_name_national_character:
+          'https://w3id.org/vdl#givenNameNationalCharacter',
         hair_colour: 'https://w3id.org/vdl#hairColour',
         height: {
           '@id': 'https://w3id.org/vdl#height',
