@@ -63,7 +63,7 @@ CONTEXT
 
 // Codec term map value for CBOR-LD
 constants.CBORLD_VALUE
-// -> 0x00
+// -> 0x0
 
 // get context data for a specific context
 const data = contexts.get('https://w3id.org/vdl/v1');
