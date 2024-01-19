@@ -12,5 +12,5 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // Serialize the context as JSON-LD
 fs.writeFileSync(
   path.join(__dirname, '..', 'contexts', ctx.constants.CONTEXT_FILENAME),
-  JSON.stringify(ctx.context, null, 2) + '\n'
+  JSON.stringify(ctx.CONTEXT, null, 2) + '\n'
 );
