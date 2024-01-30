@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "Verifiable Driver's License (VDL) context for JSON-LD.",
   "type": "module",
-  "main": "js/index.js",
-  "module": "./dist/main.cjs",
+  "main": "./js/index.js",
+  "module": "./js/index.js",
   "exports": {
     "import": "./js/index.js",
     "require": "./dist/main.cjs"
