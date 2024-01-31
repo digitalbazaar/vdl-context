@@ -1,6 +1,6 @@
 {
   "name": "@digitalbazaar/vdl-context",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Verifiable Driver's License (VDL) context for JSON-LD.",
   "type": "module",
   "main": "./js/index.js",
