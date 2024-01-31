@@ -1,5 +1,5 @@
 /*!
- * Copyright (c) 2021-2023 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2021-2024 Digital Bazaar, Inc. All rights reserved.
  */
 // Use JSON style for context
 /* eslint quotes: ['error', 'double'] */

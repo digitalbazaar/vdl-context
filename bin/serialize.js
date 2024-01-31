@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*!
- * Copyright (c) 2021-2023 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2021-2024 Digital Bazaar, Inc. All rights reserved.
  */
 import * as ctx from '../js/index.js';
 import {fileURLToPath} from 'node:url';
